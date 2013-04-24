@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="B2BTender"
+  id="myeclipse.1366771964906"
+  context-root="/B2BTender"
+  j2ee-spec="5.0"
+  archive="B2BTender.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
