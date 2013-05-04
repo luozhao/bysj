@@ -21,6 +21,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <a href="<%=basePath %>user/list">测试</a>
+    <a href="<%=basePath %>user/login">测试</a>
   </body>
 </html>

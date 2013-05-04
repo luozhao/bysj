@@ -7,8 +7,8 @@
     <constant name="struts.devMode" value="true" />
     <package name="user" extends="struts-default">
     	
-	    <action name="list" class="userAction">
-	    	<result>/index.jsp</result>
+	    <action name="login" class="userAction" method="doLogin">
+	    	<result name="okLogin">/jsp/frame/index.jsp</result>
 	    </action>	    
     </package>
     	
