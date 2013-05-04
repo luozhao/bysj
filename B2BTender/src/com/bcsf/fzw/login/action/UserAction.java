@@ -23,11 +23,10 @@ public class UserAction extends ActionSupport{
 	 */
 	public String doLogin(){
 		
-	    user = new TUser();
-	    user.setUname("admin");
-	    user.setUpwd("admin");
-		System.out.println("µÇÂ¼"+userService.doLogin(user));
-		return "okLogin";
+		if(!userService.doLogin(user).getUname().equals("") && null != userService.doLogin(user).getUname()){
+			return "okLogin";
+		}
+		return "failLogin";
 		
 	}
 
