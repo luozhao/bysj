@@ -6,10 +6,14 @@
 <struts>
     <constant name="struts.devMode" value="true" />
     <package name="user" extends="struts-default">
-    	
 	    <action name="login" class="userAction" method="doLogin">
 	    	<result name="okLogin">/jsp/frame/index.jsp</result>
 	    </action>	    
     </package>
-    	
+    
+    <package name="tender" extends="struts-default">
+    	<action name="tenm_*" class="tenderAction" method="{1}">
+    		<result name="okAdd">jsp/zbfb/bidinfo/bidinfolist.jsp</result>
+    	</action>
+    </package>
 </struts>

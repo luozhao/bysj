@@ -27,6 +27,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>com/bcsf/fzw/login/model/TUser.hbm.xml</value>
+				<value>com/bcsf/fzw/tender/model/TTender.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
@@ -45,4 +46,20 @@
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
+	
+	<!-- 招标发布 -->
+	<bean id="tenderAction" class="com.bcsf.fzw.tender.action.TTenderAction">
+		<property name="tenderService" ref="tenderService"></property>
+	</bean>
+	
+	<bean id="tenderService" class="com.bcsf.fzw.tender.service.TTenderServiceImpl">
+		<property name="tenderDAO" ref="TTenderDAO"></property>
+	</bean>
+	
+	<bean id="TTenderDAO" class="com.bcsf.fzw.tender.dao.TTenderDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
 </beans>
