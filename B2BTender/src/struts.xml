@@ -13,7 +13,7 @@
     
     <package name="tender" extends="struts-default">
     	<action name="tenm_*" class="tenderAction" method="{1}">
-    		<result name="okAdd">jsp/zbfb/bidinfo/bidinfolist.jsp</result>
+    		<result name="okList">/jsp/zbfb/bidinfo/bidinfolist.jsp</result>
     	</action>
     </package>
 </struts>

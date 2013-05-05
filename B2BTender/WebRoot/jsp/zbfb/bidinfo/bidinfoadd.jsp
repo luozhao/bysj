@@ -23,6 +23,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+  <a href="<%=basePath %>tender/tenm_tenList">列表页</a>  
+  <hr/>
   <form action="<%=basePath %>tender/tenm_tenAdd" method="post">
    	<table border="1">
    		<tr>
